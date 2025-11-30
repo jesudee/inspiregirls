@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inspire Girls Program</title>
+  <meta name="description" content="Inspire Girls — mentoring, and impacting skills leadership in girls" />
+  <style>
+    :root{--accent:#FF6B8A;--muted:#6b7280;--bg:#f7f7fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+    nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700}
+    h1{font-size:34px;margin:8px 0 12px;line-height:1.06}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn.ghost{background:transparent;border:2px solid #eee;color:var(--muted);font-weight:700}
+
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(9,10,20,0.06)}
+
+    /* Features grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .feature h4{margin:6px 0 0}
+    .feature p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    /* Form */
+    form{display:grid;gap:10px}
+    input,select,textarea{padding:10px;border-radius:8px;border:1px solid #e6e6ef;font-size:14px}
+    label{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:40px;padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* responsive */
+    @media (max-width:860px){
+      .hero{grid-template-columns:1fr;}
+      nav{display:none}
+      .logo{width:48px;height:48px}
+      h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">IG</div>
+      <div>
+        <div style="font-weight:800">Inspire Girls</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px">Learn • Lead • Create</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <img src="inspire-girls-image.jpg" width="100%" />
+        <div class="eyebrow">Free & Inclusive • Ages 12–18</div>
+        <h1>Inspire Girls Program — empowering the next generation of women leaders</h1>
+        <p class="lead">Mentorship, programming, leadership training and community projects that give girls the skills and confidence to shape their futures.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Join a cohort</button>
+          <button class="btn ghost" onclick="document.getElementById('programs').scrollIntoView({behavior:'smooth'})">See programs</button>
+        </div>
+
+        <div class="grid" style="margin-top:20px">
+          <div class="card feature">
+            <strong>Mentorship</strong>
+            <h4>Role models & career talks</h4>
+            <p>Regular sessions with mentors and social impact sectors.</p>
+          </div>
+          <div class="card feature">
+            <strong>Trainers with experience </strong>
+            <h4></h4>Tasks & challenges</h4>
+            <p>Project-based learning: web developing,content creation, graphics designing.</p>
+          </div>
+          <div class="card feature">
+            <strong>Leadership</strong>
+            <h4>Confidence & creativity</h4>
+            <p>Training in communication, teamwork, and project planning.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin:0 0 8px">Upcoming cohort</h3>
+        <p style="color:var(--muted);margin:0 0 12px">
+        <ul style="padding-left:18px;margin:8px 0 12px;color:var(--muted)">
+          <li>Weekly meetings (Fridays & Sundays)</li>
+          <li>Mentor meetups</li>
+          <li>Project showcase</li>
+        </ul>
+        <button class="btn" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Apply now</button>
+      </aside>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <div class="card">
+        <h2 style="margin:0 0 6px">About Inspire Girls</h2>
+        <p style="color:var(--muted);margin:0">Inspire Girls is a community-driven program that provides free learning opportunities and mentorship for girls aged 12–18. We focus on skills that matter: critical thinking, creativity, and leadership skills. We welcome girls of every background and give special support to learners with disabilities.</p>
+      </div>
+    </section>
+
+    <section id="programs" style="margin-top:18px">
+      <h3 style="margin:14px 0">Programs</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>COURSE LENGTH</h4>
+          <p style="color:var(--muted)">8-months course: website development, graphics designing & content creating.</p>
+        </div>
+        <div class="card">
+          <h4>Content creating</h4>
+          <p style="color:var(--muted)">Video editing,social media management.</p>
+        </div>
+        <div class="card">
+          <h4>Confidence</h4>
+          <p style="color:var(--muted)">Public speaking, project management & leadership <skills></skills>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" style="margin-top:24px">
+      <h3>Join / Volunteer</h3>
+      <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start">
+        <div>
+          <p style="margin:0 0 12px;color:var(--muted)">Fill the form to apply as a participant or volunteer. We will contact you with next steps.</p>
+          <form id="regForm" onsubmit="return submitForm(event)">
+            <label>Full name<input required type="text" id="name" placeholder="" /></label>
+            <label>Age<input required type="number" id="age" min="6" max="99" placeholder="" /></label>
+            <label>Email<input required type="email" id="email" placeholder="@gmail.com" /></label>
+            <label>Phone<input type="tel" id="phone" placeholder="+234 " /></label>
+            <label>Role
+              <select id="role">
+                <option>Participant</option>
+                <option>Volunteer / Mentor</option>
+                <option>Partner / Sponsor</option>
+              </select>
+            </label>
+            <label>Tell us why you'd like to join<textarea id="note" rows="3" placeholder="A sentence or two"></textarea></label>
+            <div style="display:flex;gap:10px;align-items:center">
+              <button class="btn" type="submit">Submit application</button>
+              <button type="button" class="btn ghost" onclick="clearForm()">Clear</button>
+            </div>
+          </form>
+        </div>
+        <aside class="card" style="background:#fff7fb">
+          <strong>Accessibility</strong>
+          <p style="color:var(--muted);margin:8px 0 0">Email us if you need specific support.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div class="card">
+        <h3>Contact</h3>
+        <p style="margin:0 0 10px;color:var(--muted)">Email: <a href="mailtohttp://hello@inspiregirls.org">hello@inspire girls.org| Phone: +234 800 000 0000</p>
+        <p style="margin:0;color:var(--muted)">Follow us: @inspiregirls (socials)</p>
+        https://inspiregirls.org
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© Inspire Girls Program — Building brighter futures</div>
+        <div style="color:var(--muted);font-size:13px">Designed with ❤️ • Accessible • Non-profit</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const age=document.getElementById('age').value;
+      if(!name||!email){alert('Please <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile Form</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #ffeef7;
+    padding: 20px;
+  }
+  h2 {
+    color: #e91e63;
+  }
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+  }
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .section-title {
+    background: #e91e63;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  .preview-box {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #e91e63;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 6px;
+  }
+</style>
+</head>
+
+<body>
+
+<h2>Create Profile</h2>
+
+<form>
+
+  <!-- SECTION 1 -->
+  <div class="section-title">1. Basic Info</div>
+
+  <label>Name</label>
+  <input type="text" placeholder="Enter your full name" required>
+
+  <label>Email</label>
+  <input type="email" placeholder="Enter your email" required>
+
+  <label>Password</label>
+  <input type="password" placeholder="Enter a secure password" required>
+
+  <label>Age</label>
+  <select required>
+    <option value="">Select Age Category</option>
+    <option>Under 13</option>
+    <option>Over 13</option>
+  </select>
+
+
+  <!-- SECTION
